@@ -1,0 +1,18 @@
+{
+  "name": "Emmanuel Kipngeno — System Administrator",
+  "short_name": "E. Kipngeno",
+  "description": "Portfolio of Emmanuel Kipngeno, System Administrator specialising in cloud infrastructure and secure application deployment.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#05080f",
+  "theme_color": "#05080f",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

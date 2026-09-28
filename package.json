@@ -1,0 +1,40 @@
+{
+  "name": "emmanuel-kipngeno-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Professional portfolio for Emmanuel Kipngeno, System Administrator",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "test:smoke": "vite build --ssr scripts/smoke.jsx --outDir .smoke --logLevel warn && node .smoke/smoke.js",
+    "og": "python scripts/generate_og_image.py"
+  },
+  "keywords": [
+    "portfolio",
+    "system-administrator",
+    "cloud",
+    "react",
+    "vite",
+    "tailwindcss"
+  ],
+  "author": "Emmanuel Kipngeno",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.1.1",
+    "eslint": "^10.11.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.12.0",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.1"
+  }
+}
