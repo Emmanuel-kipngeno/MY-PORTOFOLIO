@@ -5,8 +5,9 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  // Set to '/' if you deploy to a custom domain, e.g. emmanuelkipngeno.dev
-  base: '/portfolio/',
+  // GitHub Pages serves this site at /portfolio/, but Vercel (and custom
+  // domains) serve it at the root. Vercel sets VERCEL=1, so branch on it.
+  base: process.env.VERCEL ? '/' : '/portfolio/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
